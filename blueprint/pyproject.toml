@@ -1,0 +1,100 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blueprint"
+version = "0.1.0"
+description = "2D Building Drawing Application"
+authors = [
+    {name = "Johan Serebrink", email = "johan@serebrink.com"}
+]
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Scientific/Engineering :: Visualization"
+]
+dependencies = [
+    "PyQt5==5.15.9"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "pytest-mock>=3.10.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+    "pre-commit>=3.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/anglehelper"
+Repository = "https://github.com/yourusername/anglehelper.git"
+Issues = "https://github.com/yourusername/anglehelper/issues"
+
+[tool.setuptools]
+package-dir = {"" = "anglehelper"}
+
+[tool.setuptools.packages.find]
+where = ["anglehelper"]
+
+[tool.black]
+line-length = 88
+target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = "E203"
+exclude = [
+    ".git",
+    "__pycache__",
+    "docs",
+    "build",
+    "dist",
+    ".venv",
+    "venv"
+]
+
+[tool.mypy]
+python_version = "3.7"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = "--verbose --color=yes"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["anglehelper"]
+relative_files = true
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 90

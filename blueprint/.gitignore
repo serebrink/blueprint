@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test and coverage
+.htmlcov/
+.coverage
+*.prof
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Database
+*.db
+*.sqlite
+
+# Environment variables
+.env
+.env*
+
+# Logs
+logs/
+*.log
+
+# Cache
+.cache/
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages
+node_modules/
+package-lock.json
+
+# Mac
+*.app
+*.dmg
+
+# Windows
+Thumbs.db
