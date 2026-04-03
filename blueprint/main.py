@@ -5,7 +5,7 @@ This module contains the main application entry point and initializes the GUI.
 """
 
 import sys
-from PyQt5.QtWidgets import QApplication
+from PyQt6.QtWidgets import QApplication
 from views.main_window import MainWindow
 
 

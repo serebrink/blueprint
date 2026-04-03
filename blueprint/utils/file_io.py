@@ -6,7 +6,7 @@ Handles saving and loading drawings to/from JSON files.
 
 import json
 import os
-from PyQt5.QtWidgets import QFileDialog, QMessageBox
+from PyQt6.QtWidgets import QFileDialog, QMessageBox
 from models.drawing import Drawing
 from utils.serialization import convert_tuples_to_lists, convert_lists_to_tuples
 

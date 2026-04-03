@@ -4,8 +4,8 @@ Main application window for AngleHelper.
 This module contains the main window layout and menu setup.
 """
 
-from PyQt5.QtWidgets import QMainWindow, QWidget, QHBoxLayout, QVBoxLayout
-from PyQt5.QtCore import Qt
+from PyQt6.QtWidgets import QMainWindow, QWidget, QHBoxLayout, QVBoxLayout
+from PyQt6.QtCore import Qt
 from .toolbox import Toolbox
 from .drawing_area import DrawingArea
 from utils.constants import (

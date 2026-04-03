@@ -21,7 +21,7 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Visualization"
 ]
 dependencies = [
-    "PyQt5==5.15.9"
+    "PyQt6==6.7.0"
 ]
 
 [project.optional-dependencies]

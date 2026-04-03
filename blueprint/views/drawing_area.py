@@ -4,9 +4,9 @@ Drawing area widget for AngleHelper.
 This widget provides the 2D drawing canvas where users can create building drawings.
 """
 
-from PyQt5.QtWidgets import QWidget, QGraphicsView, QGraphicsScene
-from PyQt5.QtGui import QPen, QColor, QBrush, QPainter
-from PyQt5.QtCore import Qt, QPointF
+from PyQt6.QtWidgets import QWidget, QGraphicsView, QGraphicsScene
+from PyQt6.QtGui import QPen, QColor, QBrush, QPainter
+from PyQt6.QtCore import Qt, QPointF
 from models.drawing import Drawing
 from models.line import Line
 from utils.file_io import save_drawing_to_file, load_drawing_from_file
@@ -68,7 +68,7 @@ class DrawingArea(QGraphicsView):
             return
         
         # Draw grid lines
-        pen = QPen(QColor(GRID_LINE_COLOR), GRID_LINE_WIDTH, Qt.DotLine)
+        pen = QPen(QColor(GRID_LINE_COLOR), GRID_LINE_WIDTH, Qt.PenStyle.DotLine)
         
         # Get visible area
         visible_rect = self.mapToScene(self.viewport().rect()).boundingRect()

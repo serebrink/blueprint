@@ -78,16 +78,16 @@ mypy anglehelper/
 
 ## Troubleshooting
 
-### PyQt5 not found
+### PyQt6 not found
 ```bash
 # Check if installed
-pip show PyQt5
+pip show PyQt6
 
 # Install if missing
-pip install PyQt5==5.15.9
+pip install PyQt6==6.7.0
 
 # Verify in Python
-python -c "import PyQt5; print('PyQt5 available')"
+python -c "import PyQt6; print('PyQt6 available')"
 ```
 
 ### Qt platform errors

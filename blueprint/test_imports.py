@@ -2,7 +2,7 @@
 Test script to verify all imports and basic functionality work.
 """
 
-from PyQt5.QtWidgets import QApplication
+from PyQt6.QtWidgets import QApplication
 import sys
 
 def test_imports():

@@ -262,13 +262,13 @@ cd anglehelper && python main.py
 
 ### Troubleshooting
 
-**Issue: "ModuleNotFoundError: No module named 'PyQt5'"**
+**Issue: "ModuleNotFoundError: No module named 'PyQt6'"**
 - **Cause**: VS Code not using virtual environment
 - **Solution**:
   1. Check bottom-left corner for Python interpreter
   2. Click on it and select the venv interpreter
   3. Restart VS Code after changing interpreter
-  4. Verify with: `pip show PyQt5`
+  4. Verify with: `pip show PyQt6`
 
 **Issue: Debug button doesn't work**
 - **Cause**: Incorrect launch configuration
@@ -296,7 +296,7 @@ cd anglehelper && python main.py
 ## Additional Resources
 
 - [Python Documentation](https://docs.python.org/3/)
-- [PyQt5 Documentation](https://www.riverbankcomputing.com/static/Docs/PyQt5/)
+- [PyQt6 Documentation](https://www.riverbankcomputing.com/static/Docs/PyQt6/)
 - [pytest Documentation](https://docs.pytest.org/)
 - [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
 - [VS Code Python Documentation](https://code.visualstudio.com/docs/python/python-tutorial)
